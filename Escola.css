@@ -1,0 +1,112 @@
+.Cabeçalho {
+    background: center / cover url('https://img.freepik.com/vetores-gratis/degrade-de-fundo-azul_23-2149330355.jpg');
+    display: flex;
+    min-height: 90px;
+    min-width: 99.5%;
+    align-items: center;
+    justify-content: right;
+    font-size: 50px;
+    font: "Open Sans", sans-serif;
+    color: #ff0083;
+    text-shadow: #000 2px 2px 0.2rem;
+    border: 3px solid rgb(47, 50, 221);
+    position: fixed;
+}
+.Cadastrar {
+    font-size: 50px;
+}
+.Seguir {
+    font-size: 50px;
+}
+body {
+    min-width: 97%;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color:#73ecec;
+    background: center / cover url(Escolaimg.jpeg);
+}
+html {
+    font-size: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+img {
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color:	#4d8bdb	;
+    text-shadow: 1px 1px 1px 	black;
+}
+p {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color:	#0d1b96	;
+    line-height: 1.5;
+}
+button {
+    background-color: #89e2f8;
+    border: 5px solid #0a5a8f;
+    cursor: pointer;
+}
+.Continuações {
+    font-size: 35px;
+    text-align: center;
+    line-height: 1;
+    position: relative;
+}
+nav a {
+    margin-right: 130px;
+    display: inline;
+}
+button a:visited {
+    color: blue;
+}
+nav a:hover {
+    color: #ca1140;
+    text-decoration: underline;
+}
+button:hover {
+    background-color: #a0fadc;
+    border-color: #ca1140;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button:active {
+    color: #ca1140;
+}
+.Pé {
+    background: center / cover url(https://png.pngtree.com/thumb_back/fw800/background/20190813/pngtree-blue-background-design-template-image_290148.jpg);
+    display: flex;
+    min-width: 97%;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid transparent;
+    margin-top: 100px;
+    padding: 8px;
+    border-image: url(https://png.pngtree.com/background/20210711/original/pngtree-blue-watercolor-background-picture-image_1166464.jpg) 30 round;
+}
+h3 {
+    color: #17158f;
+    font-size: 15px;
+}
+nav img {
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+.Logohead {
+    height: 95px;
+    display: block;
+}
