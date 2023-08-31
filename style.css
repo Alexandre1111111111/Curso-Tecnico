@@ -1,4 +1,4 @@
-img {
+.Main {
     height: 250px;
     display: block;
     margin: 0 auto;
@@ -18,9 +18,10 @@ body {
     min-height: 100%;
     margin: 0 auto;
     background-color:#73ecec;
-    margin-right: 5px;
     background: center / cover url(Main.jpeg);
-    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 html {
     font-size: 10px;
@@ -38,20 +39,51 @@ li {
     list-style-type: none;
 }
 .Continuações {
-    font-size: 35px;
-    text-align: center;
-    line-height: 1;
-    margin: 132px;
-    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+    margin-bottom: 150px;
+}
+.Continuações button{
+    height: 50px;
+    width: 140px;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #3dc9f3;
+}
+.Dici:hover {
+    background-color: #73facd;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    transition-duration: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Cur:hover {
+    background-color: #73facd;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    transition-duration: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Col:hover {
+    background-color: #73facd;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    transition-duration: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Sob:hover {
+    background-color: #73facd;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    transition-duration: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .Cabeçalho {
     background: center / cover url('https://img.freepik.com/vetores-gratis/degrade-de-fundo-azul_23-2149330355.jpg');
-    display: flex;
     min-height: 90px;
     min-width: 99.5%;
-    align-items: center;
-    justify-content: right;
-    font-size: 50px;
     font: "Open Sans", sans-serif;
     color: #ff0083;
     text-shadow: #000 2px 2px 0.2rem;
@@ -59,39 +91,94 @@ li {
     position: fixed;
 }
 .Cadastrar {
+    display: inline-block;
     font-size: 50px;
-    position: relative;
-}
-.Seguir {
-    font-size: 50px;
-    position: relative;
-}
-button {
+    position: absolute;
     background-color: #89e2f8;
     border: 5px solid #0a5a8f;
     overflow: hidden;
-    display: inline-block;
     transition-duration: 0.3s;
-    position: absolute;
     cursor: pointer;
+    right: 270px;
+    top: 10px;
 }
-nav a {
-    padding: 0 15px 0 0;
+.Seguir {
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    background-color: #89e2f8;
+    border: 5px solid #0a5a8f;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    right: 100px;
+    top: 10px;
+}
+.Eng {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+}
+.Eng img {
+    max-height: 85px;
+    visibility: visible;
+}
+.sett {
+    display: inline-block;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 2;
+}
+.Eng a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 15px;
+}
+#Cog {
+    transition-duration: 0.5s;
+}
+.drop {
+    display: none;
+    position: absolute;
+    background-color: rgb(121, 219, 226);
+    right: 0px;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #000;
+    z-index: 1;
+}
+.show {
+    display:block;
+}
+.drop a:hover {
+    background-color: #72aff5;
+}
+.Log {
+    display: inline-block;
 }
 button a:visited {
     color: blue;
 }
-nav a:hover {
-    color: #ca1140;
-    text-decoration: underline;
-}
-button:hover {
+.Cadastrar:hover {
     background-color: #a0fadc;
-    border-color: #ca1140;
+    border-color: #6a33ec;
+    color: #6a33ec;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-button:active {
+.Cadastrar:active {
     color: #ca1140;
+    border-color: #ca1140;
+}
+.Seguir:hover {
+    background-color: #a0fadc;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Seguir:active {
+    color: #ca1140;
+    border-color: #ca1140;
 }
 .Pé {
     background: center / cover url(https://png.pngtree.com/thumb_back/fw800/background/20190813/pngtree-blue-background-design-template-image_290148.jpg);
@@ -104,13 +191,56 @@ button:active {
     padding: 8px;
     border-image: url(https://png.pngtree.com/background/20210711/original/pngtree-blue-watercolor-background-picture-image_1166464.jpg) 30 round;
 }
+h3 {
+    text-align: center;
+    color: #17158f;
+    font-size: 15px;
+}
 h2 {
     color: #17158f;
     font-size: 15px;
 }
-nav img {
+.Icon {
     height: 250px;
     display: block;
     margin: 0 auto;
     padding-top: 110px;
+}
+.Logofoot {
+    margin-left: 60px;
+}
+@media screen and (max-width:600px){
+    .Continuações {
+        display: grid;
+    }
+    .Cadastrar {
+        font-size: 25px;
+        width: 170px;
+        right: 200px;
+        top: 23px;
+    }
+    .Seguir {
+        font-size: 25px;
+        width: 90px;
+        top: 23px;
+    }
+    .Eng, .Eng img{
+        height: 75px;
+        top: 5px;
+        right: 13px;
+    }
+}
+@media screen and (max-width:400px){
+    .Cadastrar {
+        top: 5px;
+        right: 120px;
+    }
+    .Seguir {
+        top: 45px;
+        right: 120px;
+        width: 170px;
+    }
+    .Eng, .Eng img {
+        right: 25px;
+    }
 }

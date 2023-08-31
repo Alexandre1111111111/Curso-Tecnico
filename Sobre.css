@@ -1,11 +1,49 @@
+.Continuações {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+    margin-bottom: 150px;
+}
+.Continuações button{
+    height: 50px;
+    width: 140px;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #3dc9f3;
+}
+.Dici:hover {
+    background-color: #73facd;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    transition-duration: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Cur:hover {
+    background-color: #73facd;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    transition-duration: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Col:hover {
+    background-color: #73facd;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    transition-duration: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Sob:hover {
+    background-color: #73facd;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    transition-duration: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 .Cabeçalho {
     background: center / cover url('https://img.freepik.com/vetores-gratis/degrade-de-fundo-azul_23-2149330355.jpg');
-    display: flex;
     min-height: 90px;
     min-width: 99.5%;
-    align-items: center;
-    justify-content: right;
-    font-size: 50px;
     font: "Open Sans", sans-serif;
     color: #ff0083;
     text-shadow: #000 2px 2px 0.2rem;
@@ -13,26 +51,171 @@
     position: fixed;
 }
 .Cadastrar {
+    display: inline-block;
     font-size: 50px;
+    position: absolute;
+    background-color: #89e2f8;
+    border: 5px solid #0a5a8f;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    right: 270px;
+    top: 10px;
+    z-index: 1;
 }
 .Seguir {
+    display: inline-block;
     font-size: 50px;
+    position: absolute;
+    background-color: #89e2f8;
+    border: 5px solid #0a5a8f;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    right: 100px;
+    top: 10px;
+    z-index: 1;
+}
+.Eng {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+}
+.Eng img {
+    max-height: 85px;
+    visibility: visible;
+}
+.sett {
+    display: inline-block;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 2;
+}
+.Eng a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 15px;
+}
+#Cog {
+    transition-duration: 0.5s;
+}
+.drop {
+    display: none;
+    position: absolute;
+    background-color: rgb(121, 219, 226);
+    right: 0px;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #000;
+    z-index: 1;
+}
+.show {
+    display:block;
+}
+.drop a:hover {
+    background-color: #72aff5;
+}
+.Log {
+    display: inline-block;
+}
+button a:visited {
+    color: blue;
+}
+.Cadastrar:hover {
+    background-color: #a0fadc;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Cadastrar:active {
+    color: #ca1140;
+    border-color: #ca1140;
+}
+.Seguir:hover {
+    background-color: #a0fadc;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Seguir:active {
+    color: #ca1140;
+    border-color: #ca1140;
+}
+.idces {
+    display: inline-block;
+}
+.idces ul {
+    list-style-type: none;
+    background-color: rgb(121, 205, 226);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.idces a {
+    font-size: 35px;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-bottom: 12px;
+    padding-right: 15px;
+    display: block;
+    text-align: center;
+    color: #156ef3;
+}
+.idces img {
+    height: 65px;
+    z-index: 0;
+}
+.idces li {
+    float: left;
+    border-right: 2px solid #5f23eb;
+}
+.idces a:hover:not(.s) {
+    background-color: #8bc1ff;
+    color: #5f23eb;
+    transition-duration: 0.2s;
+}
+.iimg {
+    position: relative;
+    top: 13px;
+}
+.dimg {
+    position: relative;
+    top: 13px;
+}
+.cimg {
+    position: relative;
+    top: 13px;
+}
+.eimg {
+    position: relative;
+    top: 13px;
+}
+.simg {
+    position: relative;
+    top: 13px;
+}
+.s {
+    background-color: #3eadf7;
 }
 body {
     min-width: 97%;
     min-height: 100%;
     margin: 0 auto;
-    background-color:#73ecec;
-    background: center / cover url(Sobreimg.jpeg);
+    background: center / cover url(Sobre.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 html {
     font-size: 10px;
     font-family: "Open Sans", sans-serif;
 }
-img {
+.logo {
     height: 250px;
     display: block;
     margin: 0 auto;
+    padding-top: 100px;
 }
 h1 {
     display: flex;
@@ -63,32 +246,8 @@ h2 {
     padding: 20px 0;
     color:	#115a70	;
 }
-button {
-    background-color: #89e2f8;
-    border: 5px solid #0a5a8f;
-    cursor: pointer;
-}
-.Continuações {
-    font-size: 35px;
-    text-align: center;
-    line-height: 1;
-    position: relative;
-}
-nav a {
-    margin-right: 130px;
-    display: inline;
-}
 button a:visited {
     color: blue;
-}
-nav a:hover {
-    color: #ca1140;
-    text-decoration: underline;
-}
-button:hover {
-    background-color: #a0fadc;
-    border-color: #ca1140;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 button:active {
     color: #ca1140;
@@ -106,16 +265,124 @@ button:active {
     border-image: url(https://png.pngtree.com/background/20210711/original/pngtree-blue-watercolor-background-picture-image_1166464.jpg) 30 round;
 }
 h3 {
+    text-align: center;
     color: #17158f;
     font-size: 15px;
 }
-nav img {
-    height: 250px;
-    display: block;
-    margin: 0 auto;
-    padding-top: 130px;
+.Logofoot {
+    margin-left: 60px;
 }
-.Logohead {
-    height: 95px;
-    display: block;
+@media screen and (max-width:600px){
+    .Continuações {
+        display: grid;
+    }
+    .Cadastrar {
+        font-size: 25px;
+        width: 170px;
+        right: 200px;
+        top: 23px;
+    }
+    .Seguir {
+        font-size: 25px;
+        width: 90px;
+        top: 23px;
+    }
+    .Eng, .Eng img{
+        height: 75px;
+        top: 5px;
+        right: 13px;
+    }
+    .drop {
+        top: 88px;
+    }
+}
+@media screen and (max-width:650px) {
+    .idces a {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1630px) {
+    .idces a {
+        font-size: 28px;
+        padding-left: 7px;
+        padding-bottom: 12px;
+        padding-right: 7px;
+    }
+}
+@media screen and (max-width:1450px) {
+    .iimg, .dimg, .cimg, .eimg, .simg {
+        display: none;
+    }
+    .idces a {
+        padding-top: 30px;
+        padding-bottom: 32px;
+    }
+}
+@media screen and (max-width:400px){
+    .Cadastrar {
+        top: 5px;
+        right: 120px;
+    }
+    .Seguir {
+        top: 45px;
+        right: 120px;
+        width: 170px;
+    }
+    .Eng, .Eng img {
+        right: 25px;
+    }
+    .idces a {
+        font-size: 16.5px;
+    }
+    .idces ul {
+        position: relative;
+        right: 30px;
+    }
+}
+@media screen and (max-width:300px) {
+    .idces ul {
+        position: relative;
+        left: -15px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .idces ul {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .iimg, .dimg, .cimg, .eimg, .simg {
+        display: inline-block;
+    }
+    .Pé {
+        margin-bottom: 90px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .iimg, .dimg, .cimg, .eimg, .simg {
+        display: none;
+    }
+}
+@media screen and (max-width:540px) {
+    .idces a {
+        padding-top: 5px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .idces li {
+        border-top: 2px solid #5f23eb;
+    }
+    .Pé {
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width:495px) and (min-width:401px) {
+    .idces a {
+        font-size: 20px;
+    }
+    .idces ul {
+        left: -5px;
+    }
 }

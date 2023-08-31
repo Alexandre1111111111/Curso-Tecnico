@@ -1,0 +1,396 @@
+.Cabeçalho {
+    background: center / cover url('https://img.freepik.com/vetores-gratis/degrade-de-fundo-azul_23-2149330355.jpg');
+    min-height: 90px;
+    min-width: 99.5%;
+    font: "Open Sans", sans-serif;
+    color: #ff0083;
+    text-shadow: #000 2px 2px 0.2rem;
+    border: 3px solid rgb(47, 50, 221);
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+}
+.Cadastrar {
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    background-color: #89e2f8;
+    border: 5px solid #0a5a8f;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    right: 270px;
+    top: 10px;
+}
+.Seguir {
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    background-color: #89e2f8;
+    border: 5px solid #0a5a8f;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    right: 100px;
+    top: 10px;
+}
+.Eng {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+}
+.Eng img {
+    max-height: 85px;
+    visibility: visible;
+}
+.sett {
+    display: inline-block;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 2;
+}
+.Eng a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 15px;
+}
+#Cog {
+    transition-duration: 0.5s;
+}
+.drop {
+    display: none;
+    position: absolute;
+    background-color: rgb(121, 219, 226);
+    right: 0px;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #000;
+    z-index: 1;
+}
+.show {
+    display:block;
+}
+.drop a:hover {
+    background-color: #72aff5;
+}
+body {
+    min-width: 99%;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color:#73ecec;
+    background: center / cover url(Configimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+html {
+    font-size: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+button a:visited {
+    color: blue;
+}
+.Cadastrar:hover {
+    background-color: #a0fadc;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Cadastrar:active {
+    color: #ca1140;
+    border-color: #ca1140;
+}
+.Seguir:hover {
+    background-color: #a0fadc;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Seguir:active {
+    color: #ca1140;
+    border-color: #ca1140;
+}
+.Voltar {
+    display: inline-block;
+    height: 80px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 20px;
+}
+.Voltar:hover {
+    transition-duration: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 60px;
+    padding-top: 130px;
+    color:	#1fb5e2;
+    text-shadow: 1px 1px 1px 	black;
+}
+.cds {
+    border: 3px solid #004ef5;
+    margin: 0 auto;
+    max-width: 725px;
+    background-image: url(Config.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 0.5s;
+}
+.cds:hover {
+    box-shadow: 0 8px 16px 8px rgba(10, 30, 212, 0.2), 0 6px 20px 0 rgba(23, 163, 182, 0.19);
+}
+.Linha {
+    max-width: 725px;
+    height: 5px;
+    background-color: #004ef5;
+    border-color: #73ecec;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    transition-duration: 0.5s;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #863fe2;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider {
+    border-radius: 34px;
+}
+.slider:before {
+    border-radius: 50%;
+}
+.des {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #1fb5e2;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-left: 10px;
+}
+.switch {
+    margin-left: 100px;
+    margin-top: 5px;
+}
+.nt {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #1fb5e2;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.lin {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #1fb5e2;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-left: 90px;
+}
+#linguagens {
+    font-size: 20px;
+    margin-left: 140px;
+    width: 120px;
+    background-color: #9ae2ff;
+    cursor: pointer;
+    border-color: #ab87ff;
+    color: #6425da;
+}
+#save {
+    cursor: pointer;
+    font-size: 45px;
+    background-color: #78e0ff;
+    border: 3px solid #0a5a8f;
+    border-radius: 10px;
+    width: 150px;
+}
+#save:hover {
+    color: #0041f3;
+    border-color: #511ddf;
+    transition-duration: 0.3s;
+}
+.cha {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.rdf {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px; 
+}
+#redef {
+    cursor: pointer;
+    font-size: 30px;
+    width: 160px;
+    background-color: #78e0ff;
+    border: 3px solid #0a5a8f;
+    border-radius: 10px;
+}
+#redef:hover {
+    color: #0041f3;
+    border-color: #511ddf;
+    transition-duration: 0.3s;
+}
+@media screen and (max-width:1550px) {
+    #linguagens {
+        margin-left: 30px;
+    }
+    .switch {
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width:900px) {
+    .cds {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:770px) {
+    .Seguir {
+        font-size: 25px;
+        top: 23px;
+    }
+    .Cadastrar {
+        font-size: 25px;
+        width: 170px;
+        right: 200px;
+        top: 23px;
+    }
+    .Eng, .Eng img{
+        height: 75px;
+        top: 5px;
+    }
+    .drop {
+        top: 88px;
+    }
+}
+@media screen and (max-width:560px) {
+    .Seguir {
+        right: 90px;
+    }
+    .Cadastrar {
+        right: 190px;
+    }
+    .Eng, .Eng img {
+        right: 0px;
+        top: 5px;
+    }
+}
+@media screen and (max-width:340px) and (min-width:0px) {
+    #enviar {
+        width: 200px;
+    }
+    #cadastrar {
+        width: 200px;
+    }
+}
+@media screen and (max-width:360px) {
+    .Voltar {
+        height: 50px;
+        top: 18px;
+    }
+    .Cadastrar {
+        font-size: 20px;
+        width: 140px;
+        top: 28px;
+    }
+    .Eng, .Eng img {
+        height: 70px;
+        top: 7px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:470px) {
+    .Cadastrar {
+        font-size: 20px;
+        width: 140px;
+        top: 5px;
+        right: 80px;
+    }
+    .Seguir {
+        font-size: 20px;
+        right: 80px;
+        width: 140px;
+        top: 45px;
+    }
+    .str img {
+        height: 40px;
+    }
+    .lin, .des, .nt {
+        display: grid;
+    }
+    .switch {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 30px;
+    }
+    .nt .switch {
+        margin-left: 115px;
+        margin-right: 115px;
+    }
+    .lin {
+        margin: 0;
+    }
+    #linguagens {
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:370px) and (min-width:0px) {
+    h1 {
+        font-size: 40px;
+    }
+}

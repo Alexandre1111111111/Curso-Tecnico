@@ -9,11 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Técnico Mário Braga</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style class="stylesheet"></style>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="Icon" href="https://images.vexels.com/media/users/3/224234/isolated/preview/ff7c525c1c3e1bef640644542001e1fd-logotipo-da-escola-online.png">
-    <script src="Cadastro.js"></script>
 </head>
+<body>
+<script src="Script.js"></script>
 <div class="Cabeçalho">
     <header>
     <?php
@@ -21,35 +23,44 @@
     echo $_SESSION["usuario"];
     }
     ?>
-        <button type="button" id="Cad" class="Cadastrar"><a style="text-decoration: none;" href="Cadastro.php">Cadastrar-se</a></button> <button type="button" id="Cad" class="Seguir"><a style="text-decoration: none;" href="Siga.php">Entrar</a></button>
-        <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
-        <button type="submit" name="logout" value="Logout">Logout</button>
-
-        </form>
+        <a href="Cadastro.php">
+        <button type="button" class="Cadastrar">Cadastrar-se</button>
+        </a>
+        <a href="Siga.php">
+        <button type="button" class="Seguir">Entrar</button>
+        </a>
+        <div class="Eng">
+        <button type="button" id="config" onclick="Dropbox()" class="sett"><img id="Cog" src="https://cdn-icons-png.flaticon.com/512/6645/6645225.png" alt=""></button>
+        <div class="drop" id="Box">
+            <a href="FeedBack.php">FeedBack</a>
+            <a href="Config.php">Configurações</a>
+        </div>
+        </div>
     </header>
 </div>
-<body>
-    <nav>
     <div class="Icon">
-        <img src="https://images.vexels.com/media/users/3/224234/isolated/preview/ff7c525c1c3e1bef640644542001e1fd-logotipo-da-escola-online.png" alt="Logo">
+        <img class="Main" onload="Carregar()" src="https://images.vexels.com/media/users/3/224234/isolated/preview/ff7c525c1c3e1bef640644542001e1fd-logotipo-da-escola-online.png" alt="Logo">
     </div>
-    </nav>
     <div class="Título">
         <h1>Curso Técnico Mário Braga</h1>
     </div>
-    <article>
         <div class="Introdução">
             <p>O colégio Mário Braga disponibiliza algumas diciplinas para o desenvolvimento técnico dos alunos</p>
         </div>
-    </article>
-    <nav>
     <div class="Continuações">
-    <a href="Matérias.php">Diciplinas</a> 
-    <a href="Curso.php">Curso</a> 
-    <a href="Escola.php">Colégio</a> 
-    <a href="Sobre.php">Sobre</a>
+        <a style="text-decoration: none;" href="Matérias.php">
+            <button type="button" class="Dici">Diciplinas</button>
+        </a>
+        <a style="text-decoration: none;" href="Curso.php">
+            <button type="button" class="Cur">Curso</button>
+        </a>
+        <a style="text-decoration: none;" href="Escola.php">
+            <button type="button" class="Col">Colégio</button>
+        </a>
+        <a style="text-decoration: none;" href="Sobre.php">
+            <button type="button" class="Sob">Sobre</button>
+        </a>
     </div>
-    </nav>
     <div class="Pé">
         <footer>
             <img class="Logofoot" src="https://images.vexels.com/media/users/3/224233/isolated/lists/d5ee0e9c87bb54cf867d7fb89c4570b8-logotipo-da-educacao-online.png" alt="LogoPé">

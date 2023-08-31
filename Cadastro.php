@@ -7,23 +7,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <title>Cadastro - Curso Técnico Mário Braga</title>
     <link rel="stylesheet" href="Cadastro.css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="Icon" href="https://images.vexels.com/media/users/3/224234/isolated/preview/ff7c525c1c3e1bef640644542001e1fd-logotipo-da-escola-online.png">
 </head>
-<div class="Cabeçalho">
-    <header class="Back">
-    <a href="index.php"> <img class="Voltar" src="https://cdn-icons-png.flaticon.com/512/2879/2879564.png" alt="Logohead"></a></img>
-    </header>
-    <header class="Entrar">
-    <button><a style="text-decoration: none;" class="Seguir" href="Siga.php">Entrar</a></button>
-    </header>
-
-</div>
 <body>
-<h1>Cadastrar</h1>
-    <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+    <script src="Script.js"></script>
+<div class="Cabeçalho">
+    <header>
+    <a href="index.php"> <img class="Voltar" src="https://cdn-icons-png.flaticon.com/512/9073/9073020.png" alt="Logohead"></a></img>
+    <a href="Siga.php">
+        <button type="button" class="Seguir">Entrar</button>
+        </a>
+        <div class="Eng">
+        <button type="button" id="config" onclick="Dropbox()" class="sett"><img id="Cog" src="https://cdn-icons-png.flaticon.com/512/6645/6645225.png" alt=""></button>
+        <div class="drop" id="Box">
+            <a href="FeedBack.php">FeedBack</a>
+            <a href="Config.php">Configurações</a>
+        </div>
+    </header>
+</div>
+<form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post" id="cdsform" onmouseover="formback()" onmouseout="formbdr()" class="cds">
+    <h1>Cadastrar</h1>
         <h2><label for="nome">Nome</label></h2>
     <div class="Nome">
         <input type="text" id="nome" size="40" name="usuario" maxlength="30" required placeholder="Digite seu Nome">
@@ -40,14 +49,25 @@
     <div class="Confirmar">
         <input type="password" id="confirmar" size="40" name="confirmar" minlength="4" required maxlength="35" autocomplete="off" placeholder="Confirme a sua Senha">
     </div>
-    <hr class="Linha">
+    <hr class="Linha" id="li1">
+    <div class="chbox">
+        <input type="checkbox" id="check" name="cbox" required>
+        <label class="term" for="check">Eu li e aceito os <a href="">termos e serviços</a>.</label>
+    </div>
+    <hr class="Linha" id="li2">
     <div class="Cadastrar">
         <input type="submit" id="cadastrar" name="cadastrar" value="Cadastrar">
+    </div>
+    <div class="seg">
+        <label for="seguir">Já possuí uma conta? <a href="Siga.php">Siga!</a></label>
     </div>
 </form>
 <?php
     include("Banco.php");
     if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $_SESSION["usuario"] = $_POST["usuario"];
+        $_SESSION["email"] = $_POST["email"];
+        $_SESSION["senha"] = $_POST["senha"];
         $usuario = filter_input(INPUT_POST, "usuario", FILTER_SANITIZE_SPECIAL_CHARS);
         $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_SPECIAL_CHARS);
         $senha = filter_input(INPUT_POST, "senha", FILTER_SANITIZE_SPECIAL_CHARS);
@@ -61,7 +81,6 @@
             echo"Este email já existe";
         }
     }
-    
     mysqli_close($conn);
 ?>
 </body>

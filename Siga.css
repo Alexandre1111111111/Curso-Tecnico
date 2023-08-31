@@ -1,36 +1,107 @@
 .Cabeçalho {
     background: center / cover url('https://img.freepik.com/vetores-gratis/degrade-de-fundo-azul_23-2149330355.jpg');
-    display: flex;
-    height: 90px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 50px;
+    min-height: 90px;
+    min-width: 100%;
     font: "Open Sans", sans-serif;
     color: #ff0083;
     text-shadow: #000 2px 2px 0.2rem;
     border: 3px solid rgb(47, 50, 221);
+    position: fixed;
 }
 .Cadastrar {
+    display: inline-block;
     font-size: 50px;
+    position: absolute;
+    background-color: #89e2f8;
+    border: 5px solid #0a5a8f;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    right: 110px;
+    top: 10px;
+    z-index: 1;
+}
+.Eng {
+    display: inline-block;
+    position: absolute;
+    right: 3px;
+    top: -3px;
+}
+.Eng img {
+    max-height: 85px;
+    visibility: visible;
+}
+.sett {
+    display: inline-block;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 2;
+}
+.Eng a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 15px;
+}
+#Cog {
+    transition-duration: 0.5s;
+}
+.drop {
+    display: none;
+    position: absolute;
+    background-color: rgb(121, 219, 226);
+    right: 0px;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #000;
+    z-index: 1;
+    top: 95px;
+}
+.show {
+    display:block;
+}
+.drop a:hover {
+    background-color: #72aff5;
+}
+.Log {
+    display: inline-block;
+}
+button a:visited {
+    color: blue;
+}
+.Cadastrar:hover {
+    background-color: #a0fadc;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Cadastrar:active {
+    color: #ca1140;
+    border-color: #ca1140;
 }
 body {
-    width: 97%;
-    height: 913px;
     margin: 0 auto;
     background-color:#73ecec;
-    padding: 0 20px 20px 20px;
-    border: 3px solid rgb(66, 69, 233);
-    background: center / cover url(Seguirimg.jpeg);
+    background: center / cover url(Siga.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 html {
     font-size: 10px;
     font-family: "Open Sans", sans-serif;
 }
 .Voltar {
+    display: inline-block;
     height: 80px;
-    display: block;
-    margin: 0 auto;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 20px;
+}
+.Voltar:hover {
+    transition-duration: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .Nome {
     display: flex;
@@ -51,15 +122,57 @@ html {
     display: flex;
     justify-content: center;
     margin-top: 60px;
-    height: 40px;
-    font-size: 80px;
-    width: 100%;
+}
+#nome {
+    background-color: #abdeff;
+    border-color: #922ed4;
+    color: rgb(83, 25, 243);
+    border-radius: 10px;
+}
+#email {
+    background-color: #abdeff;
+    border-color: #922ed4;
+    color: rgb(83, 25, 243);
+    border-radius: 10px;
+}
+#senha {
+    background-color: #abdeff;
+    border-color: #922ed4;
+    color: rgb(83, 25, 243);
+    border-radius: 10px;
+}
+#nome:hover {
+    border: 2px solid #6a33ec;
+    background-color: #86c7f3;
+    transition-duration: 0.3s;
+}
+#email:hover {
+    border: 2px solid #6a33ec;
+    background-color: #86c7f3;
+    transition-duration: 0.3s;
+}
+#senha:hover {
+    border: 2px solid #6a33ec;
+    background-color: #86c7f3;
+    transition-duration: 0.3s;
+}
+#nome::placeholder {
+    color: #363434;
+}
+#email::placeholder {
+    color: #363434;
+}
+#senha::placeholder {
+    color: #363434;
+}
+#evrform {
+    transition-duration: 0.3s;
 }
 h1 {
     font-size: 60px;
     text-align: center;
     margin: 0;
-    padding: 20px 0;
+    padding-top: 115px;
     color:	#0bca1b	;
     text-shadow: 1px 1px 1px 	black;
 }
@@ -67,12 +180,18 @@ h2 {
     font-size: 35px;
     text-align: center;
     margin: 0;
+    margin-bottom: 10px;
     padding: 20px 0;
-    color:	#2178b3	;
+    color:	#0089e4	;
+    text-shadow: 1px 1px 1px 	black;
 }
 .Linha {
-    width: 380px;
-    margin-top: 70px;
+    max-width: 575px;
+    height: 5px;
+    background-color: #004ef5;
+    border-color: #73ecec;
+    margin-top: 90px;
+    transition-duration: 0.3s;
 }
 button {
     background-color: #89e2f8;
@@ -81,18 +200,103 @@ button {
 button a:visited {
     color: blue;
 }
-nav a:hover {
-    color: #ca1140;
-    text-decoration: underline;
-}
 button:hover {
     background-color: #a0fadc;
     border-color: #ca1140;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-button a:hover {
-    color: #ca1140;
-}
 button:active {
     color: #ca1140;
+}
+#entrar {
+    height: 60px;
+    width: 200px;
+    border-color: #0a5a8f;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #5ec6e6;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#entrar:hover {
+    background-color: #a0fadc;
+    border-color: #6a33ec;
+    color: #6a33ec;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.3s;
+}
+.cds {
+    border: 3px solid #5016f1;
+    margin: 0 auto;
+    max-width: 575px;
+    background-image: url(form.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cds:hover {
+    box-shadow: 0 8px 16px 8px rgba(10, 30, 212, 0.2), 0 6px 20px 0 rgba(23, 163, 182, 0.19);
+}
+.seg {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #5ec6e6;
+}
+.seg a {
+    text-decoration: none;
+    color: #00c298;
+}
+@media screen and (max-width:640px) {
+    .Cadastrar {
+        font-size: 25px;
+        width: 170px;
+        right: 90px;
+        top: 23px;
+    }
+    .Eng, .Eng img{
+        height: 75px;
+        top: 0px;
+    }
+    .drop {
+        top: 88px;
+    }
+}
+@media screen and (max-width:450px) {
+    .cds {
+        margin: 0 auto;
+    }
+    .Eng, .Eng img {
+        right: 0px;
+        top: 0px;
+    }
+}
+@media screen and (max-width:340px) {
+    #nome, #email, #senha {
+        width: 230px;
+    }
+    #cadastrar {
+        width: 200px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:360px) {
+    .Voltar {
+        height: 40px;
+        top: 25px;
+    }
+    .Cadastrar {
+        font-size: 20px;
+        width: 140px;
+        top: 28px;
+    }
+    .Eng, .Eng img{
+        height: 75px;
+        top: 2px;
+        right: 0px;
+    }
 }
